@@ -1,204 +1,161 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-font-smoothing: antialiased; /*deixa a font mais agradavel*/
-    -moz-osx-font-smoothing: grayscale; /*deixa a font mais agradavel*/
-
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-:root{
+:root {
     font-size: 62.5%;
-
     --background-color-header: #F9F4FB;
     --background-color-main--p: #312D64;
     --color-titles: #B52184;
     font-family: 'Mulish', sans-serif;
 }
 
-.app{
+.app {
     display: grid;
     grid-template-rows: 1fr 1.5fr .6fr max-content;
-    
 }
 
-header{
+header {
     grid-row: 1;
     background-color: var(--background-color-header);
-
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-header img{
+header img {
     width: 36rem;
     height: 37rem;
 }
 
-header h1{
+header h1 {
     margin-top: 1.7rem;
-    color:var(--color-titles);
-
+    color: var(--color-titles);
     font-size: 3.2rem;
-    font-style: normal;
     font-weight: 900;
-    line-height: normal;
 }
 
 header p {
     color: var(--background-color-main--p);
-
     text-align: center;
     font-family: Mulish;
     font-size: 2rem;
-    font-style: normal;
-
-    line-height: normal; 
 }
 
-header button{
-
+header button {
     margin-top: 3.5rem;
     margin-bottom: 9.2rem;
-
     border: none;
     background-color: var(--background-color-header);
 }
 
-
-main{
-    
+main {
     grid-row: 2;
-
     background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
-
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
-.cards{
+.cards {
     margin-top: 52px;
     width: 352px;
     height: max-content;
-
-    border-radius: 19.865px; 
+    border-radius: 19.865px;
     background: #FFF;
     box-shadow: 0px 3.31077px 13.24308px 0px rgba(0, 0, 0, 0.25);
 }
 
-.cards img{
+.cards img {
     padding: 2rem;
 }
 
-.cards h3{
+.cards h3 {
     padding: 2rem 0 0 2rem;
     color: var(--color-titles);
-
     font-size: 2.9rem;
-    font-style: normal;
     font-weight: 900;
-    line-height: normal;
 }
 
-.cards p{
-
+.cards p {
     padding: 2rem;
-
     color: var(--background-color-main--p);
-
-    font-size: 1.6rem ;
-    font-style: normal;
+    font-size: 1.6rem;
     font-weight: 600;
-    line-height: normal;
 }
 
-.cards:last-child{
+.cards:last-child {
     margin-bottom: 5rem;
 }
 
-form{
+form {
     grid-row: 3;
 }
 
-fieldset{
+fieldset {
     border: none;
 }
 
-fieldset legend{
+fieldset legend {
     color: var(--color-titles);
-    font-family: Mulish;
     font-size: 3.2rem;
-    font-style: normal;
     font-weight: 900;
-    line-height: normal;
 }
-section{
+
+section {
     padding: 4rem;
 }
-.contact h2{
 
+.contact h2 {
     color: var(--color-titles);
-    font-family: Mulish;
     font-size: 32px;
-    font-style: normal;
     font-weight: 900;
-    line-height: normal;
     margin-bottom: 4rem;
 }
 
-.input-wrapper input{
+.input-wrapper input,
+.input-wrapper textarea {
     width: 100%;
     padding: 1rem 4.5rem 1.2rem;
     border-radius: 16px;
     border: 1.5px solid #312D64;
-
     margin-bottom: 2.4rem;
 }
 
-.input-wrapper textarea{
-    width: 100%;
-    height: 11rem;
-    padding: 1rem 1.2rem;
-    border-radius: 16px;
-    border: 1.5px solid #312D64;
-
-    margin-bottom: 2.4rem;
+#name input {
+    background: url(./assets/person.svg) no-repeat 1.4rem;
 }
 
-#name input{
-    background: url(./assets/person.svg) no-repeat 1.4rem ;
+#email input {
+    background: url(./assets/at.svg) no-repeat 1.4rem;
 }
 
-#email input{
-    background: url(./assets/at.svg) no-repeat 1.4rem ;
-}
-
-.button-wrapper input{
+.button-wrapper input {
     padding: 1.6rem;
     border: none;
     border-radius: 16px;
     background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
-
     color: #fff;
 }
-footer{
+
+footer {
     grid-row: 4;
     background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
 }
 
-footer p{
+footer p {
     padding: 2.6rem;
-
     color: #FFF;
     text-align: center;
     font-size: 2rem;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
 }
 
-
-  
+@media(min-width:1440px){
+    
+}
